@@ -7,8 +7,8 @@ EXE = $(patsubst %.c, %, $(SRC))
 all: ${EXE}
 
 %:	%.c
-	${CC} ${CFLAGS} -O3 $@.c -o $@-O3
+	${CC} ${CFLAGS} -O3 $@.c -o $@
 	${CC} ${CFLAGS} -g  $@.c -o $@-g
 
 clean:
-	rm *-O3 *-g
+	rm ${EXE} *-g
