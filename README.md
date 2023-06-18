@@ -7,3 +7,6 @@
 
 * Philosopher
     * simultaneous (low concurrency)
+
+* Spinlock
+    * ticket lock
